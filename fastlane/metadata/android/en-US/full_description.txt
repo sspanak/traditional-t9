@@ -1,6 +1,6 @@
 TT9 is a 12-key T9 keyboard for devices with a hardware numpad. It supports predictive text typing in 30+ languages, configurable hotkeys, and an on-screen keypad that can turn your smartphone into a Nokia from the 2000s. And, best of all, it doesn't spy on you!
 
-Supported languages: Arabic, Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hebrew, Hindi (phonetic), Hinglish, Hungarian, Indonesian, Italian, Kiswahili, Korean, Norwegian, Polish, Portuguese (European and Brazilian), Romanian, Russian, Spanish, Swedish, Moroccan Tamazight (Latin and Tifinagh), Thai, Turkish, Ukrainian, Vietnamese, Yiddish.
+Supported languages: Arabic, Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, English, Finnish, French, German, Greek, Gujarati (phonetic), Hebrew, Hindi (phonetic), Hinglish, Hungarian, Indonesian, Italian, Kiswahili, Korean, Norwegian, Polish, Portuguese (European and Brazilian), Romanian, Russian, Spanish, Swedish, Moroccan Tamazight (Latin and Tifinagh), Thai, Turkish, Ukrainian, Vietnamese, Yiddish.
 
 Philosophy and Privacy Policy:
 - No ads, no premium or paid features. It's all free.

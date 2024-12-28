@@ -17,11 +17,7 @@ class LocaleWordsSorter {
 
 
 	LocaleWordsSorter(@Nullable Language language) {
-		if (LanguageKind.isHindi(language)) {
-			sortingPattern = Pattern.compile("[\\u0904-\\u0939\\u0958-\\u0961][\\u0900-\\u0904\\u093A-\\u094F\\u0962\\u0963]+");
-		} else {
-			sortingPattern = null;
-		}
+		sortingPattern = LanguageKind.isIndic(language) ? Pattern.compile("\\p{L}\\p{M}+") : null;
 	}
 
 

@@ -25,10 +25,13 @@ class Punctuation {
 		',', '-', '\'', ':', ';', '!', '?', '.'
 	));
 
-	final private static ArrayList<Character> CombiningPunctuationIndic = new ArrayList<>(Arrays.asList(
-		'्', '़', 'ऽ', 'ः', '।', '॰', '॥'
+	final private static ArrayList<Character> CombiningPunctuationGujarati = new ArrayList<>(Arrays.asList(
+		'્', '઼', 'ઽ', 'ઃ', '।', '॰', '॥' // Indic combining chars look the same, but have different Unicode values
 	));
 
+	final private static ArrayList<Character> CombiningPunctuationHindi = new ArrayList<>(Arrays.asList(
+		'्', '़', 'ऽ', 'ः', '।', '॰', '॥' // Indic combining chars look the same, but have different Unicode values
+	));
 
 	final private static ArrayList<Character> CombiningPunctuationHebrew = new ArrayList<>(Arrays.asList(
 		',' , '-', '\'', ':', ';', '!', '?', '.', '"'
@@ -65,11 +68,16 @@ class Punctuation {
 	public static boolean isCombiningPunctuation(Language language, char ch) {
 		return
 			CombiningPunctuation.contains(ch)
-			|| (LanguageKind.isIndic(language) && CombiningPunctuationIndic.contains(ch))
+			|| (LanguageKind.isGujarati(language) && CombiningPunctuationGujarati.contains(ch))
+			|| (LanguageKind.isHindi(language) && CombiningPunctuationHindi.contains(ch))
 			|| (LanguageKind.isHebrew(language) && CombiningPunctuationHebrew.contains(ch));
 	}
 
 	public static boolean isCombiningPunctuation(char ch) {
-		return CombiningPunctuation.contains(ch) || CombiningPunctuationIndic.contains(ch) || CombiningPunctuationHebrew.contains(ch);
+		return
+			CombiningPunctuation.contains(ch)
+			|| CombiningPunctuationGujarati.contains(ch)
+			|| CombiningPunctuationHindi.contains(ch)
+			|| CombiningPunctuationHebrew.contains(ch);
 	}
 }

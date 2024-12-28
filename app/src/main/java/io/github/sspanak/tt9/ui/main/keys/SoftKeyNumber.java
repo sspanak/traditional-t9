@@ -211,9 +211,12 @@ public class SoftKeyNumber extends SoftKey {
 			// Greek diacritics and ending sigma
 			|| currentLetter == 'ς'
 			|| (isGreek && (currentLetter < 'α' || currentLetter > 'ω'))
-			// Hindi matras
+			// Hindi combining
 			|| (currentLetter >= 0x0900 && currentLetter <= 0x0903) || (currentLetter >= 0x093A && currentLetter <= 0x094F)
 			|| (currentLetter >= 0x0951 && currentLetter <= 0x0957) || currentLetter == 0x0962 || currentLetter == 0x0963
+			// Gujarati combining
+			|| (currentLetter >= 0x0A81 && currentLetter <= 0x0A83) || (currentLetter >= 0xABC && currentLetter <= 0x0ACD)
+			|| currentLetter == 0x0AE2 || currentLetter == 0x0AE3
 		;
 	}
 }
