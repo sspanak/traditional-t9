@@ -57,6 +57,11 @@ public class SQLiteOpener extends SQLiteOpenHelper {
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		onCreate(db);
 		for (Migration migration : Migration.LIST) {
+			if (oldVersion > migration.oldVersion) {
+				Logger.d(LOG_TAG, "Skipping migration: '" + migration.query + "'. Required previous version: " + migration.oldVersion + " but we are at: " + oldVersion);
+				continue;
+			}
+
 			try {
 				db.execSQL(migration.query);
 				Logger.d(LOG_TAG, "Migration succeeded: '" + migration.query);
