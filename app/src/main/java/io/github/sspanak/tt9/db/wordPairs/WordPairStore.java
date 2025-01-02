@@ -165,6 +165,17 @@ public class WordPairStore extends BaseSyncStore {
 	}
 
 
+	public void remove(@NonNull Language language) {
+		if (!checkOrNotify()) {
+			return;
+		}
+
+		DeleteOps.deleteWordPairs(sqlite.getDb(), language.getId());
+		slowestLoadTime = 0;
+		slowestSaveTime = 0;
+	}
+
+
 	public void remove(@NonNull ArrayList<Language> languages) {
 		if (!checkOrNotify()) {
 			return;

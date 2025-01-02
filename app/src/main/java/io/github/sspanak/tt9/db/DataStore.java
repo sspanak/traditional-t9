@@ -11,6 +11,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import io.github.sspanak.tt9.db.entities.AddWordResult;
 import io.github.sspanak.tt9.db.wordPairs.WordPairStore;
@@ -20,6 +21,7 @@ import io.github.sspanak.tt9.languages.Language;
 import io.github.sspanak.tt9.preferences.settings.SettingsStore;
 import io.github.sspanak.tt9.util.ConsumerCompat;
 import io.github.sspanak.tt9.util.Logger;
+import io.github.sspanak.tt9.util.Timer;
 
 public class DataStore {
 	private final static String LOG_TAG = DataStore.class.getSimpleName();
@@ -79,11 +81,23 @@ public class DataStore {
 
 
 	public static void deleteLanguages(Runnable notification, @NonNull ArrayList<Language> languages) {
-		runInTransaction(
-			() -> { words.remove(languages); pairs.remove(languages); },
-			notification,
-			"Failed deleting languages."
-		);
+		Timer.start(LOG_TAG);
+
+		AtomicInteger progress = new AtomicInteger(languages.size());
+		Runnable onDeleted = () -> {
+			if (progress.decrementAndGet() == 0) {
+				Logger.d(LOG_TAG, "Deleted " + languages.size() + " languages. Time: " + Timer.stop(LOG_TAG) + " ms");
+				notification.run();
+			}
+		};
+
+		for (Language language : languages) {
+			runInTransaction(
+				() -> { words.remove(language); pairs.remove(language); },
+				onDeleted,
+				"Failed deleting languages."
+			);
+		}
 	}
 
 
