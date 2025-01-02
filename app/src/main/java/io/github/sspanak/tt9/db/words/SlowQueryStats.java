@@ -21,7 +21,7 @@ public class SlowQueryStats {
 		return language.getId() + "_" + sequence + "_" + wordFilter + "_" + minimumWords;
 	}
 
-	public static void add(String key, int time, String positionsList) {
+	public static void add(Language language, String sequence, String wordFilter, int minimumWords, int time, String positionsList) {
 		if (firstQueryTime == -1) {
 			firstQueryTime = System.currentTimeMillis();
 		}
@@ -32,6 +32,7 @@ public class SlowQueryStats {
 			return;
 		}
 
+		String key = generateKey(language, sequence, wordFilter, minimumWords);
 		slowQueries.put(key, time);
 		if (!resultCache.containsKey(key)) {
 			resultCache.put(key, positionsList.replaceAll("-\\d+,", ""));

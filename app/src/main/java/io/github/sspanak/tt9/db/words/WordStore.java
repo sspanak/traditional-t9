@@ -96,7 +96,7 @@ public class WordStore extends BaseSyncStore {
 
 		printLoadingSummary(sequence, words, longPositionsTime, positionsTime, wordsTime);
 		if (!cancel.isCanceled()) { // do not cache empty results from aborted queries
-			SlowQueryStats.add(SlowQueryStats.generateKey(language, sequence, wordFilter, minWords), (int) (positionsTime + wordsTime), positions);
+			SlowQueryStats.add(language, sequence, wordFilter, minWords, (int) (positionsTime + wordsTime), positions);
 		}
 
 		return words;
