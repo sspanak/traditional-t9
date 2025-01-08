@@ -15,7 +15,7 @@ AI	10
 ah	11
 bg
 bh
-ch	102
+ch
 Al
 CJ
 cl	67
@@ -594,7 +594,7 @@ Anh
 Ani
 Aoi
 Boh	28
-CNG
+CNG	83
 bog	96
 cog	76
 Bok
@@ -980,7 +980,7 @@ IPS	82
 irs	98
 GPU	87
 Irt
-HTC
+HTC	79
 ITC	88
 Iva	34
 hub	119
@@ -1138,13 +1138,13 @@ Loy
 joy	97
 low	148
 lsd	98
-LPG
+LPG	83
 LSI	74
 kph	47
 JVC	77
 Luc
 Jud	63
-LTE
+LTE	25
 Ltd
 Lud
 Lue
@@ -19677,8 +19677,8 @@ tibur	1
 thaws	60
 theca
 thebe
-tidal	109
 Vidal	79
+tidal	109
 tieck	47
 vidar
 Theda	49
@@ -23534,6 +23534,7 @@ Bonita	32
 bonito	59
 conium
 comity	57
+AMOLED
 Conlee
 bonked
 booked	103
