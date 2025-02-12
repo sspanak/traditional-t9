@@ -38,7 +38,7 @@ class Punctuation {
 	));
 
 	final public static ArrayList<String> PunctuationArabic = new ArrayList<>(Arrays.asList(
-		"،", ".", "-", "(", ")", "&", "~", "`", "'", "\"",  "؛", ":", "!", "؟"
+		"،", ".", "-", ZWNJ, "(", ")", "&", "~", "`", "'", "\"",  "؛", ":", "!", "؟"
 	));
 
 	final public static ArrayList<String> PunctuationEnglish = new ArrayList<>(Arrays.asList(
