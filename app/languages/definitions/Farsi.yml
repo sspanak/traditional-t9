@@ -1,0 +1,15 @@
+locale: fa-IR
+dictionaryFile: fa-utf8.csv
+abcString: أﺏﺕ
+hasUpperCase: no
+layout:
+  - [SPECIAL] # 0
+  - [PUNCTUATION_AR] # 1
+  - [ب,پ,ت,ث,ة] # 2
+  - [ا,أ,إ,آ,ى,ؤ,ئ,ء] # 3
+  - [س,ش,ص,ض] # 4
+  - [د,ذ,ر,ز,ژ] # 5
+  - [ج,چ,ح,خ] # 6
+  - [ن,ه,و,ی] # 7
+  - [ف,ق,ك,ک,گ,ل,م] # 8 "ك" should not be there, but there are words with it
+  - [ط,ظ,ع,غ,] # 9
