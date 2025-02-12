@@ -263,6 +263,11 @@ static def extractAlphabetExtraCharsFromLine(String languageName, String line) {
 			.replace(',', '')
 			.replace(' ', '')
 
+	// add Zero-width non-joiner for some languages
+	if (languageName.contains("Farsi")) {
+		allChars += '\u200C'
+	}
+
 	return DEFAULT + allChars
 }
 
