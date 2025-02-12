@@ -29,6 +29,6 @@
 		<io.github.sspanak.tt9.ui.main.keys.SoftKeyLF4
 			style="@style/TTheme.Numpad.Key.LF4"
 			android:id="@+id/soft_key_lf4" />
-		<include layout="@layout/key_overlay_icons" />
+		<include layout="@layout/key_overlay_lf4" />
 	</RelativeLayout>
 </LinearLayout>

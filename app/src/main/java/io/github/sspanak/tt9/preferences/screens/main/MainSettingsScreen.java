@@ -46,8 +46,7 @@ public class MainSettingsScreen extends BaseScreenFragment {
 
 	private void createAboutSection(boolean isTT9On) {
 		(new ItemVersionInfo(findPreference(ItemVersionInfo.NAME), activity)).populate().enableClickHandler();
-
-		DonatePreference donate = findPreference("donate_link");
+		DonatePreference donate = findPreference(DonatePreference.NAME);
 		if (donate != null) {
 			donate.populate(activity.getSettings(), isTT9On);
 		}

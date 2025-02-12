@@ -368,26 +368,26 @@ Não, eu não deveria. Veja os pontos anteriores.
 O Touchpal costumava ser o melhor teclado em 2015, quando não tinha concorrência real. No entanto, as coisas mudaram desde então. Veja a comparação lado a lado entre Traditional T9 e Touchpal:
 
 _**Traditional T9**_
-  - Respeita sua privacidade.
-  - Não contém anúncios e é gratuito.
-  - Suporta uma ampla variedade de dispositivos: celulares básicos e TVs com teclados físicos, além de smartphones e tablets apenas com tela sensível ao toque.
-  - Oferece um layout T9 de 12 teclas adequado para cada idioma.
-  - Fornece sugestões de palavras aprimoradas. Por exemplo, se você tentar digitar expressões com textônimos como "go in", ele aprenderá a não sugerir "go go" ou "in in", mas sim a expressão significativa que você tinha em mente.
-  - Tudo o que você digita permanece no seu telefone. Nenhuma informação é enviada para lugar nenhum.
-  - É de código aberto, permitindo que você revise todo o código-fonte e os dicionários, contribua para o projeto para torná-lo melhor (muitos usuários ajudaram corrigindo bugs e adicionando novos idiomas e traduções) ou até mesmo crie uma versão modificada com base em suas preferências e visão.
-  - Tem um design limpo e altamente legível que se integra ao sistema. Não há elementos desnecessários que distraiam, permitindo que você se concentre na digitação.
-  - A velocidade de carregamento do dicionário é lenta.
+- Respeita sua privacidade.
+- Não contém anúncios e é gratuito.
+- Suporta uma ampla variedade de dispositivos: celulares básicos e TVs com teclados físicos, além de smartphones e tablets apenas com tela sensível ao toque.
+- Oferece um layout T9 de 12 teclas adequado para cada idioma.
+- Fornece sugestões de palavras aprimoradas. Por exemplo, se você tentar digitar expressões com textônimos como "go in", ele aprenderá a não sugerir "go go" ou "in in", mas sim a expressão significativa que você tinha em mente.
+- Tudo o que você digita permanece no seu telefone. Nenhuma informação é enviada para lugar nenhum.
+- É de código aberto, permitindo que você revise todo o código-fonte e os dicionários, contribua para o projeto para torná-lo melhor (muitos usuários ajudaram corrigindo bugs e adicionando novos idiomas e traduções) ou até mesmo crie uma versão modificada com base em suas preferências e visão.
+- Tem um design limpo e altamente legível que se integra ao sistema. Não há elementos desnecessários que distraiam, permitindo que você se concentre na digitação.
+- A velocidade de carregamento do dicionário é lenta.
 
 _**Touchpal**_
-  - Solicita agressivamente acesso a todo o seu dispositivo e contatos; grava arquivos aleatórios em qualquer lugar; no final, foi banido da Play Store porque se comportava como um vírus.
-  - Está cheio de anúncios.
-  - Suporta apenas dispositivos com tela sensível ao toque.
-  - Não é um verdadeiro teclado T9. Oferece um layout T9 apenas em alguns idiomas. Além disso, alguns layouts estão incorretos (por exemplo, no layout búlgaro falta uma letra e algumas letras estão trocadas entre a tecla 8 e a tecla 9).
-  - Ao digitar textônimos consecutivos, ele sugere apenas a última palavra selecionada. Por exemplo, se você tentar digitar "go in", ele mostrará apenas "go go" ou "in in".
-  - Sugestões baseadas em nuvem poderiam ser usadas para melhorar a precisão. No entanto, para que isso funcione, você e todos os outros usuários precisariam enviar tudo o que digitam para os servidores do Touchpal para processamento.
-  - Código fechado. Não há como verificar o que ele faz em segundo plano.
-  - Inclui muitos temas, cores, GIFs e outras distrações que não têm relação com a digitação.
-  - A velocidade de carregamento do dicionário é rápida. O Touchpal vence neste ponto.
+- Solicita agressivamente acesso a todo o seu dispositivo e contatos; grava arquivos aleatórios em qualquer lugar; no final, foi banido da Play Store porque se comportava como um vírus.
+- Está cheio de anúncios.
+- Suporta apenas dispositivos com tela sensível ao toque.
+- Não é um verdadeiro teclado T9. Oferece um layout T9 apenas em alguns idiomas. Além disso, alguns layouts estão incorretos (por exemplo, no layout búlgaro falta uma letra e algumas letras estão trocadas entre a tecla 8 e a tecla 9).
+- Ao digitar textônimos consecutivos, ele sugere apenas a última palavra selecionada. Por exemplo, se você tentar digitar "go in", ele mostrará apenas "go go" ou "in in".
+- Sugestões baseadas em nuvem poderiam ser usadas para melhorar a precisão. No entanto, para que isso funcione, você e todos os outros usuários precisariam enviar tudo o que digitam para os servidores do Touchpal para processamento.
+- Código fechado. Não há como verificar o que ele faz em segundo plano.
+- Inclui muitos temas, cores, GIFs e outras distrações que não têm relação com a digitação.
+- A velocidade de carregamento do dicionário é rápida. O Touchpal vence neste ponto.
 
 Se você discorda ou deseja explicar seu ponto de vista, participe da [discussão aberta](https://github.com/sspanak/tt9/issues/647) no GitHub. Apenas lembre-se de ser respeitoso com os outros. Postagens de ódio não serão toleradas.
 

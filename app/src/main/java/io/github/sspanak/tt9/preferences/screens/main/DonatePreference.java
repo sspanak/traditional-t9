@@ -16,7 +16,7 @@ import io.github.sspanak.tt9.preferences.settings.SettingsStore;
 import io.github.sspanak.tt9.ui.UI;
 import io.github.sspanak.tt9.util.Logger;
 
-class DonatePreference extends Preference {
+public class DonatePreference extends Preference {
 	public static final String NAME = "donate_link";
 
 

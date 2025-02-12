@@ -366,26 +366,26 @@ Nein, sollte ich nicht. Siehe die vorherigen Punkte.
 Touchpal war 2015 vielleicht die beste Tastatur, als es noch keine echte Konkurrenz gab. Aber seitdem hat sich viel verändert. Sieh dir den Vergleich zwischen Traditional T9 und Touchpal an:
 
 _**Traditional T9**_
-  - Respektiert deine Privatsphäre.
-  - Enthält keine Werbung und ist kostenlos.
-  - Unterstützt eine breite Palette von Geräten: Tastenhandys und Fernseher mit Hardware-Tastaturen sowie reine Touchscreen-Smartphones und Tablets.
-  - Bietet ein echtes 12-Tasten-T9-Layout für jede Sprache.
-  - Verbessert Wortvorschläge. Zum Beispiel, wenn du textonyme Ausdrücke wie „go in“ tippst, wird es lernen, nicht „go go“ oder „in in“ vorzuschlagen, sondern den beabsichtigten Ausdruck.
-  - Alles, was du tippst, bleibt auf deinem Gerät. Es werden keine Informationen gesendet.
-  - Ist Open Source, sodass du den Quellcode und die Wörterbücher einsehen oder zum Projekt beitragen kannst.
-  - Hat ein klares und gut lesbares Design, das sich in das System einfügt. Es gibt keine unnötigen Spielereien, sodass du dich aufs Tippen konzentrieren kannst.
-  - Die Ladegeschwindigkeit des Wörterbuchs ist langsam.
+- Respektiert deine Privatsphäre.
+- Enthält keine Werbung und ist kostenlos.
+- Unterstützt eine breite Palette von Geräten: Tastenhandys und Fernseher mit Hardware-Tastaturen sowie reine Touchscreen-Smartphones und Tablets.
+- Bietet ein echtes 12-Tasten-T9-Layout für jede Sprache.
+- Verbessert Wortvorschläge. Zum Beispiel, wenn du textonyme Ausdrücke wie „go in“ tippst, wird es lernen, nicht „go go“ oder „in in“ vorzuschlagen, sondern den beabsichtigten Ausdruck.
+- Alles, was du tippst, bleibt auf deinem Gerät. Es werden keine Informationen gesendet.
+- Ist Open Source, sodass du den Quellcode und die Wörterbücher einsehen oder zum Projekt beitragen kannst.
+- Hat ein klares und gut lesbares Design, das sich in das System einfügt. Es gibt keine unnötigen Spielereien, sodass du dich aufs Tippen konzentrieren kannst.
+- Die Ladegeschwindigkeit des Wörterbuchs ist langsam.
 
 _**Touchpal**_
-  - Fordert aggressiv Zugriff auf dein gesamtes Gerät und deine Kontakte, schreibt zufällige Dateien überall; wurde schließlich aus dem Play Store verbannt, weil es sich wie ein Virus verhielt.
-  - Enthält viele Anzeigen.
-  - Unterstützt nur Touchscreen-Geräte.
-  - Ist keine echte T9-Tastatur. Es bietet ein T9-Layout nur in einigen Sprachen an. Zudem sind einige Layouts fehlerhaft (z. B. fehlt im bulgarischen Layout ein Buchstabe, und einige Buchstaben sind zwischen der 8er- und 9er-Taste vertauscht).
-  - Beim Eingeben von Textonymen schlägt es nur das zuletzt gewählte Wort vor. Zum Beispiel wird bei „go in“ entweder „go go“ oder „in in“ angezeigt.
-  - Cloud-basierte Vorschläge könnten die Genauigkeit verbessern. Damit das funktioniert, müssen jedoch du und alle anderen Nutzer alles, was ihr tippt, an die Touchpal-Server senden.
-  - Geschlossene Quelle. Es gibt keine Möglichkeit zu überprüfen, was im Hintergrund passiert.
-  - Enthält viele Themes, Farben, GIFs und andere Ablenkungen, die nichts mit dem Tippen zu tun haben.
-  - Die Ladegeschwindigkeit des Wörterbuchs ist schnell. Touchpal gewinnt diesen Punkt.
+- Fordert aggressiv Zugriff auf dein gesamtes Gerät und deine Kontakte, schreibt zufällige Dateien überall; wurde schließlich aus dem Play Store verbannt, weil es sich wie ein Virus verhielt.
+- Enthält viele Anzeigen.
+- Unterstützt nur Touchscreen-Geräte.
+- Ist keine echte T9-Tastatur. Es bietet ein T9-Layout nur in einigen Sprachen an. Zudem sind einige Layouts fehlerhaft (z. B. fehlt im bulgarischen Layout ein Buchstabe, und einige Buchstaben sind zwischen der 8er- und 9er-Taste vertauscht).
+- Beim Eingeben von Textonymen schlägt es nur das zuletzt gewählte Wort vor. Zum Beispiel wird bei „go in“ entweder „go go“ oder „in in“ angezeigt.
+- Cloud-basierte Vorschläge könnten die Genauigkeit verbessern. Damit das funktioniert, müssen jedoch du und alle anderen Nutzer alles, was ihr tippt, an die Touchpal-Server senden.
+- Geschlossene Quelle. Es gibt keine Möglichkeit zu überprüfen, was im Hintergrund passiert.
+- Enthält viele Themes, Farben, GIFs und andere Ablenkungen, die nichts mit dem Tippen zu tun haben.
+- Die Ladegeschwindigkeit des Wörterbuchs ist schnell. Touchpal gewinnt diesen Punkt.
 
 Wenn du anderer Meinung bist oder deine Sichtweise erklären möchtest, beteilige dich an [der offenen Diskussion](https://github.com/sspanak/tt9/issues/647) auf GitHub. Bitte sei respektvoll gegenüber anderen. Hasskommentare werden nicht toleriert.
 

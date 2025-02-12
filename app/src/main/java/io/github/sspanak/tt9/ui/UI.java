@@ -143,9 +143,4 @@ public class UI {
 	public static void toastShortSingle(@NonNull Context context, int resourceId) {
 		toastSingle(context, String.valueOf(resourceId), context.getString(resourceId), true);
 	}
-
-
-	public static void toastLongSingle(@NonNull Context context, int resourceId) {
-		toastSingle(context, String.valueOf(resourceId), context.getString(resourceId), false);
-	}
 }

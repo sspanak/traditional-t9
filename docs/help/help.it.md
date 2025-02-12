@@ -366,26 +366,26 @@ No, non dovrei. Vedi i punti precedenti.
 Touchpal era la migliore tastiera nel 2015, quando non aveva una vera concorrenza. Tuttavia, da allora le cose sono cambiate. Ecco un confronto tra Traditional T9 e Touchpal:
 
 _**Traditional T9**_
-  - Rispetta la tua privacy.
-  - Non contiene pubblicità ed è gratuito.
-  - Supporta un'ampia gamma di dispositivi: telefoni base e TV con tastiere hardware, oltre a smartphone e tablet solo touchscreen.
-  - Offre un vero layout T9 a 12 tasti per ogni lingua.
-  - Fornisce suggerimenti di parole migliorati. Ad esempio, se provi a digitare espressioni con textonimi come "go in", imparerà a non suggerire "go go" o "in in", ma l'espressione corretta che avevi in mente.
-  - Tutto ciò che digiti rimane sul tuo telefono. Nessuna informazione viene inviata altrove.
-  - È open source, permettendoti di controllare tutto il codice sorgente e i dizionari, contribuire al progetto per migliorarlo (molti utenti hanno aiutato correggendo bug e aggiungendo nuove lingue e traduzioni) o persino creare una versione modificata in base alle tue preferenze e visione.
-  - Ha un design pulito e altamente leggibile che si integra con il sistema. Non ci sono elementi superflui che distraggono, permettendoti di concentrarti sulla digitazione.
-  - La velocità di caricamento del dizionario è lenta.
+- Rispetta la tua privacy.
+- Non contiene pubblicità ed è gratuito.
+- Supporta un'ampia gamma di dispositivi: telefoni base e TV con tastiere hardware, oltre a smartphone e tablet solo touchscreen.
+- Offre un vero layout T9 a 12 tasti per ogni lingua.
+- Fornisce suggerimenti di parole migliorati. Ad esempio, se provi a digitare espressioni con textonimi come "go in", imparerà a non suggerire "go go" o "in in", ma l'espressione corretta che avevi in mente.
+- Tutto ciò che digiti rimane sul tuo telefono. Nessuna informazione viene inviata altrove.
+- È open source, permettendoti di controllare tutto il codice sorgente e i dizionari, contribuire al progetto per migliorarlo (molti utenti hanno aiutato correggendo bug e aggiungendo nuove lingue e traduzioni) o persino creare una versione modificata in base alle tue preferenze e visione.
+- Ha un design pulito e altamente leggibile che si integra con il sistema. Non ci sono elementi superflui che distraggono, permettendoti di concentrarti sulla digitazione.
+- La velocità di caricamento del dizionario è lenta.
 
 _**Touchpal**_
-  - Chiede in modo aggressivo l'accesso a tutto il tuo dispositivo e ai tuoi contatti; scrive file casuali ovunque; alla fine è stato bandito dal Play Store perché si comportava come un virus.
-  - Pieno di pubblicità.
-  - Supporta solo dispositivi touchscreen.
-  - Non è una vera tastiera T9. Offre un layout T9 solo in alcune lingue. Inoltre, alcuni layout sono errati (ad esempio, nel layout bulgaro manca una lettera e alcune lettere sono scambiate tra il tasto 8 e il tasto 9).
-  - Quando si digitano textonimi consecutivi, suggerisce solo l'ultima parola selezionata. Ad esempio, se provi a digitare "go in", mostrerà solo "go go" o "in in".
-  - I suggerimenti basati sul cloud potrebbero migliorare la precisione. Tuttavia, affinché ciò funzioni, tu e tutti gli altri utenti dovreste inviare tutto ciò che digitate ai server di Touchpal per l'elaborazione.
-  - Codice chiuso. Non c'è modo di verificare cosa faccia in background.
-  - Include molti temi, colori, GIF e altre distrazioni non legate alla digitazione.
-  - La velocità di caricamento del dizionario è veloce. Touchpal vince questo punto.
+- Chiede in modo aggressivo l'accesso a tutto il tuo dispositivo e ai tuoi contatti; scrive file casuali ovunque; alla fine è stato bandito dal Play Store perché si comportava come un virus.
+- Pieno di pubblicità.
+- Supporta solo dispositivi touchscreen.
+- Non è una vera tastiera T9. Offre un layout T9 solo in alcune lingue. Inoltre, alcuni layout sono errati (ad esempio, nel layout bulgaro manca una lettera e alcune lettere sono scambiate tra il tasto 8 e il tasto 9).
+- Quando si digitano textonimi consecutivi, suggerisce solo l'ultima parola selezionata. Ad esempio, se provi a digitare "go in", mostrerà solo "go go" o "in in".
+- I suggerimenti basati sul cloud potrebbero migliorare la precisione. Tuttavia, affinché ciò funzioni, tu e tutti gli altri utenti dovreste inviare tutto ciò che digitate ai server di Touchpal per l'elaborazione.
+- Codice chiuso. Non c'è modo di verificare cosa faccia in background.
+- Include molti temi, colori, GIF e altre distrazioni non legate alla digitazione.
+- La velocità di caricamento del dizionario è veloce. Touchpal vince questo punto.
 
 Se non sei d'accordo o vuoi spiegare il tuo punto di vista, partecipa alla [discussione aperta](https://github.com/sspanak/tt9/issues/647) su GitHub. Ricorda solo di essere rispettoso verso gli altri. I messaggi di odio non saranno tollerati.
 
@@ -397,4 +397,4 @@ Se stai ancora imparando a usare T9 e hai bisogno di tornare indietro occasional
 La maggior parte delle altre tastiere permette di tornare a Traditional T9 tenendo premuta la barra spaziatrice o il tasto "cambia lingua". Controlla il rispettivo manuale per ulteriori informazioni.
 
 #### Non riesco a cambiare lingua su un telefono touchscreen
-Innanzitutto, assicurati di aver abilitato tutte le lingue desiderate in Impostazioni → Lingue. Poi tieni premuto il [tasto sinistro F4](#tasto-sinistro-f4-il-tasto-in-basso-a-sinistra) per cambiare lingua.
+Innanzitutto, assicurati di aver abilitato tutte le lingue desiderate in Impostazioni → Lingue. Poi tieni premuto il [tasto sinistro F4](#tasto-f4-sinistro-il-tasto-in-basso-a-sinistra) per cambiare lingua.

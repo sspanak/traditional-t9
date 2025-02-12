@@ -366,26 +366,26 @@ Hayır, kopyalamamalıyım. Önceki maddelere bakın.
 Touchpal, 2015 yılında rakipsiz olduğu dönemde gerçekten en iyi klavyelerden biriydi. Ancak o zamandan beri işler değişti. İşte Traditional T9 ve Touchpal'ın karşılaştırması:
 
 _**Traditional T9**_
-  - Gizliliğinize saygı duyar.
-  - Reklam içermez ve tamamen ücretsizdir.
-  - Geniş bir cihaz yelpazesini destekler: tuşlu telefonlar, donanım klavyeli televizyonlar ve yalnızca dokunmatik ekrana sahip akıllı telefonlar ve tabletler.
-  - Her dil için tam uyumlu 12 tuşlu bir T9 düzeni sunar.
-  - Gelişmiş kelime önerileri sağlar. Örneğin, "go in" gibi bir textonym ifadesi yazmaya çalışırsanız, "go go" veya "in in" yerine anlamlı olan ifadeyi öğrenerek önerir.
-  - Yazdığınız her şey cihazınızda kalır. Hiçbir veri herhangi bir yere gönderilmez.
-  - Açık kaynaklıdır, böylece tüm kaynak kodunu ve sözlükleri inceleyebilir, projeye katkıda bulunarak geliştirebilir (birçok kullanıcı hataları düzeltmeye ve yeni diller ile çeviriler eklemeye yardımcı oldu) veya kendi isteğinize göre bir mod oluşturabilirsiniz.
-  - Sisteme uyum sağlayan sade ve okunaklı bir tasarıma sahiptir. Gereksiz süslemeler içermez, böylece yazmaya odaklanabilirsiniz.
-  - Sözlük yükleme hızı düşüktür.
+- Gizliliğinize saygı duyar.
+- Reklam içermez ve tamamen ücretsizdir.
+- Geniş bir cihaz yelpazesini destekler: tuşlu telefonlar, donanım klavyeli televizyonlar ve yalnızca dokunmatik ekrana sahip akıllı telefonlar ve tabletler.
+- Her dil için tam uyumlu 12 tuşlu bir T9 düzeni sunar.
+- Gelişmiş kelime önerileri sağlar. Örneğin, "go in" gibi bir textonym ifadesi yazmaya çalışırsanız, "go go" veya "in in" yerine anlamlı olan ifadeyi öğrenerek önerir.
+- Yazdığınız her şey cihazınızda kalır. Hiçbir veri herhangi bir yere gönderilmez.
+- Açık kaynaklıdır, böylece tüm kaynak kodunu ve sözlükleri inceleyebilir, projeye katkıda bulunarak geliştirebilir (birçok kullanıcı hataları düzeltmeye ve yeni diller ile çeviriler eklemeye yardımcı oldu) veya kendi isteğinize göre bir mod oluşturabilirsiniz.
+- Sisteme uyum sağlayan sade ve okunaklı bir tasarıma sahiptir. Gereksiz süslemeler içermez, böylece yazmaya odaklanabilirsiniz.
+- Sözlük yükleme hızı düşüktür.
 
 _**Touchpal**_
-  - Cihazınızdaki tüm verilere ve kişilerinize erişmek için ısrarcıdır; rastgele dosyalar oluşturur; en sonunda bir virüs gibi davrandığı için Play Store'dan kaldırılmıştır.
-  - Reklamlarla doludur.
-  - Sadece dokunmatik ekranlı cihazları destekler.
-  - Gerçek bir T9 klavyesi değildir. Yalnızca bazı dillerde T9 düzeni sunar. Ayrıca, bazı düzenler hatalıdır (örneğin, Bulgarca'da bir harf eksik ve bazı harfler 8 ve 9 tuşları arasında yanlış sıralanmıştır).
-  - Arka arkaya textonym yazarken yalnızca son seçtiğiniz kelimeyi önerir. Örneğin, "go in" yazmaya çalıştığınızda, ya "go go" ya da "in in" şeklinde önerir.
-  - Bulut tabanlı öneriler doğruluğu artırabilir, ancak bunun çalışması için sizin ve diğer tüm kullanıcıların yazdıkları her şeyi Touchpal sunucularına göndermesi gerekir.
-  - Kapalı kaynaklıdır. Arka planda ne yaptığını kontrol etmenin hiçbir yolu yoktur.
-  - Klavyeyle ilgisi olmayan birçok tema, renk, GIF ve dikkat dağıtıcı unsur içerir.
-  - Sözlük yükleme hızı yüksektir. Bu noktada Touchpal kazanıyor.
+- Cihazınızdaki tüm verilere ve kişilerinize erişmek için ısrarcıdır; rastgele dosyalar oluşturur; en sonunda bir virüs gibi davrandığı için Play Store'dan kaldırılmıştır.
+- Reklamlarla doludur.
+- Sadece dokunmatik ekranlı cihazları destekler.
+- Gerçek bir T9 klavyesi değildir. Yalnızca bazı dillerde T9 düzeni sunar. Ayrıca, bazı düzenler hatalıdır (örneğin, Bulgarca'da bir harf eksik ve bazı harfler 8 ve 9 tuşları arasında yanlış sıralanmıştır).
+- Arka arkaya textonym yazarken yalnızca son seçtiğiniz kelimeyi önerir. Örneğin, "go in" yazmaya çalıştığınızda, ya "go go" ya da "in in" şeklinde önerir.
+- Bulut tabanlı öneriler doğruluğu artırabilir, ancak bunun çalışması için sizin ve diğer tüm kullanıcıların yazdıkları her şeyi Touchpal sunucularına göndermesi gerekir.
+- Kapalı kaynaklıdır. Arka planda ne yaptığını kontrol etmenin hiçbir yolu yoktur.
+- Klavyeyle ilgisi olmayan birçok tema, renk, GIF ve dikkat dağıtıcı unsur içerir.
+- Sözlük yükleme hızı yüksektir. Bu noktada Touchpal kazanıyor.
 
 Eğer aynı fikirde değilseniz veya bakış açınızı açıklamak isterseniz, GitHub'daki [açık tartışmaya](https://github.com/sspanak/tt9/issues/647) katılabilirsiniz. Sadece diğer kullanıcılara saygılı olun. Nefret içerikli mesajlara izin verilmeyecektir.
 

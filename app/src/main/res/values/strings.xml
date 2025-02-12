@@ -151,7 +151,6 @@
 	<string name="donate_summary">If you like %1$s, you could buy me a beer.</string>
 	<string name="donate_hold_to_open">Press and hold to open in the browser.</string>
 	<string name="donate_url" translatable="false">https://www.buymeacoffee.com/sspanak</string>
-	<string name="donate_url_short" translatable="false">www.buymeacoffee.com</string>
 
 	<string name="function_add_word">Add Word</string>
 	<string name="function_add_word_not_available">Adding words is not possible in this language.</string>

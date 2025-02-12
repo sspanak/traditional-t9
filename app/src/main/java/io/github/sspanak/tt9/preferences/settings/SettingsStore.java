@@ -18,8 +18,6 @@ public class SettingsStore extends SettingsUI {
 	public final static int DICTIONARY_DOWNLOAD_READ_TIMEOUT = 10000; // ms
 	public final static int DICTIONARY_IMPORT_BATCH_SIZE = 5000; // words
 	public final static int DICTIONARY_IMPORT_PROGRESS_UPDATE_TIME = 250; // ms
-	public final static int INPUT_CONNECTION_ERRORS_MAX = 3;
-	public final static int INPUT_CONNECTION_OPERATIONS_TIMEOUT = 100; // ms
 	public final static int RESIZE_THROTTLING_TIME = 60; // ms
 	public final static byte SLOW_QUERY_TIME = 50; // ms
 	public final static int SLOW_QUERY_TIMEOUT = 3000; // ms
