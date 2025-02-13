@@ -4,12 +4,12 @@ abcString: أﺏﺕ
 hasUpperCase: no
 layout:
   - [SPECIAL] # 0
-  - [PUNCTUATION_AR] # 1
+  - [PUNCTUATION_AR,◌ً] # 1 shall we keep U+064B?
   - [ب,پ,ت,ث,ة] # 2
   - [ا,أ,إ,آ,ى,ؤ,ئ,ء] # 3
   - [س,ش,ص,ض] # 4
   - [د,ذ,ر,ز,ژ] # 5
   - [ج,چ,ح,خ] # 6
-  - [ن,ه,و,ی] # 7
+  - [ن,ه,و,ي,ی] # 7 "ي" should not be there, bu there are many words with it
   - [ف,ق,ك,ک,گ,ل,م] # 8 "ك" should not be there, but there are words with it
-  - [ط,ظ,ع,غ,] # 9
+  - [ط,ظ,ع,غ] # 9
