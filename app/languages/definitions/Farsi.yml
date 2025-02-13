@@ -13,3 +13,5 @@ layout:
   - [ن,ه,و,ي,ی] # 7 "ي" should not be there, bu there are many words with it
   - [ف,ق,ك,ک,گ,ل,م] # 8 "ك" should not be there, but there are words with it
   - [ط,ظ,ع,غ] # 9
+
+  # There are maybe invalid words towards the end of the file
