@@ -223,6 +223,7 @@ public class SuggestionsBar {
 			char firstChar = trimmedSuggestion.charAt(0);
 
 			String prefix = Character.isAlphabetic(firstChar) && !Characters.isCombiningPunctuation(firstChar) ? STEM_VARIATION_PREFIX : STEM_PUNCTUATION_VARIATION_PREFIX;
+			prefix = Characters.isFathatan(firstChar) ? " " : prefix; // fix incorrect display of fathatan without a base character
 			trimmedSuggestion = prefix + trimmedSuggestion;
 
 			suggestions.add(trimmedSuggestion);

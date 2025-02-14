@@ -25,6 +25,10 @@ class Punctuation {
 		',', '-', '\'', ':', ';', '!', '?', '.'
 	));
 
+	final public static ArrayList<Character> CombiningPunctuationFarsi = new ArrayList<>(Arrays.asList(
+		'،', ZWNJ.charAt(0), '-', '\'', ':', '؛', '!', '؟', '.'
+	));
+
 	final private static ArrayList<Character> CombiningPunctuationGujarati = new ArrayList<>(Arrays.asList(
 		'્', '઼', 'ઽ', 'ઃ', '।', '॰', '॥' // Indic combining chars look the same, but have different Unicode values
 	));
@@ -38,11 +42,16 @@ class Punctuation {
 	));
 
 	final public static ArrayList<String> PunctuationArabic = new ArrayList<>(Arrays.asList(
-		"،", ".", "-", ZWNJ, "(", ")", "&", "~", "`", "'", "\"",  "؛", ":", "!", "؟"
+		"،", ".", "-", "(", ")", "&", "~", "`", "'", "\"",  "؛", ":", "!", "؟"
 	));
 
 	final public static ArrayList<String> PunctuationEnglish = new ArrayList<>(Arrays.asList(
 		",", ".", "-", "(", ")", "&", "~", "`", ";", ":", "'", "\"", "!", "?"
+	));
+
+	// the same as Arabic + ZWNJ
+	final public static ArrayList<String> PunctuationFarsi = new ArrayList<>(Arrays.asList(
+		"،", ".", "-", ZWNJ, "(", ")", "&", "~", "`", "'", "\"",  "؛", ":", "!", "؟"
 	));
 
 	final public static ArrayList<String> PunctuationFrench = new ArrayList<>(Arrays.asList(
@@ -68,6 +77,7 @@ class Punctuation {
 	public static boolean isCombiningPunctuation(Language language, char ch) {
 		return
 			CombiningPunctuation.contains(ch)
+			|| (LanguageKind.isFarsi(language) && CombiningPunctuationFarsi.contains(ch))
 			|| (LanguageKind.isGujarati(language) && CombiningPunctuationGujarati.contains(ch))
 			|| (LanguageKind.isHindi(language) && CombiningPunctuationHindi.contains(ch))
 			|| (LanguageKind.isHebrew(language) && CombiningPunctuationHebrew.contains(ch));
@@ -76,6 +86,7 @@ class Punctuation {
 	public static boolean isCombiningPunctuation(char ch) {
 		return
 			CombiningPunctuation.contains(ch)
+			|| CombiningPunctuationFarsi.contains(ch)
 			|| CombiningPunctuationGujarati.contains(ch)
 			|| CombiningPunctuationHindi.contains(ch)
 			|| CombiningPunctuationHebrew.contains(ch);
