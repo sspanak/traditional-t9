@@ -46,4 +46,8 @@ public class Characters extends Emoji {
 	public static boolean isCurrency(Language language, String c) {
 		return Currency.contains(c) || (language != null && language.getCurrency().equals(c));
 	}
+
+	public static boolean isFathatan(char ch) {
+		return ch == 0x064B;
+	}
 }
