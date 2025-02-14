@@ -223,20 +223,26 @@ public class SuggestionsBar {
 			char firstChar = trimmedSuggestion.charAt(0);
 
 			String prefix = Character.isAlphabetic(firstChar) && !Characters.isCombiningPunctuation(firstChar) ? STEM_VARIATION_PREFIX : STEM_PUNCTUATION_VARIATION_PREFIX;
-			prefix = Characters.isFathatan(firstChar) ? " " : prefix; // fix incorrect display of fathatan without a base character
-			trimmedSuggestion = prefix + trimmedSuggestion;
 
-			suggestions.add(trimmedSuggestion);
+			// it is a combining character, but since it is a letter, we must include a base character,
+			// not to break it, with a "..." prefix
+			prefix = Characters.isFathatan(firstChar) ? " " : prefix;
+
+			suggestions.add(prefix + formatUnreadableSuggestion(trimmedSuggestion));
 			return;
 		}
 
-		// convert the unreadable special characters to their readable form or add the readable ones
-		switch (suggestion) {
-			case "\n" -> suggestions.add(Characters.NEW_LINE);
-			case Characters.ZWJ -> suggestions.add(Characters.ZWJ_GRAPHIC);
-			case Characters.ZWNJ -> suggestions.add(Characters.ZWNJ_GRAPHIC);
-			default -> suggestions.add(suggestion);
-		}
+		suggestions.add(formatUnreadableSuggestion(suggestion));
+	}
+
+
+	private String formatUnreadableSuggestion(String suggestion) {
+		return switch (suggestion) {
+			case "\n" -> Characters.NEW_LINE;
+			case Characters.ZWJ -> Characters.ZWJ_GRAPHIC;
+			case Characters.ZWNJ -> Characters.ZWNJ_GRAPHIC;
+			default -> suggestion;
+		};
 	}
 
 
