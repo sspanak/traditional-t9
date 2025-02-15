@@ -40,4 +40,9 @@ public class Characters extends Emoji {
 		}
 		return keyCharacters;
 	}
+
+
+	public static boolean isFathatan(char ch) {
+		return ch == 0x064B;
+	}
 }

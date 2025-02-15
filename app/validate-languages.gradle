@@ -253,6 +253,11 @@ static def extractAlphabetExtraCharsFromLine(String languageName, String line) {
 			.replace(',', '')
 			.replace(' ', '')
 
+	// add Zero-width non-joiner for some languages
+	if (line.contains("PUNCTUATION_FA") || line.contains("PUNCTUATION_IN")) {
+		allChars += '\u200C'
+	}
+
 	return DEFAULT + allChars
 }
 
