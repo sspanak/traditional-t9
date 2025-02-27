@@ -101,7 +101,7 @@ public class WordPredictions extends Predictions {
 			words.addAll(dbWords);
 		} else {
 			suggestStem();
-			dbWords = localeWordsSorter.shouldSort(language, stem, digitSequence) ? localeWordsSorter.sort(dbWords) : dbWords;
+			dbWords = localeWordsSorter.shouldSort(stem, digitSequence) ? localeWordsSorter.sort(dbWords) : dbWords;
 			dbWords = rearrangeByPairFrequency(dbWords);
 			suggestMissingWords(generatePossibleStemVariations(dbWords));
 			suggestMissingWords(dbWords.isEmpty() ? generateWordVariations(inputWord) : dbWords);
@@ -148,7 +148,7 @@ public class WordPredictions extends Predictions {
 		// append all letters for the last digit in the sequence (the last pressed key)
 		int lastSequenceDigit = digitSequence.charAt(digitSequence.length() - 1) - '0';
 		for (String keyLetter : settings.getOrderedKeyChars(language, lastSequenceDigit)) {
-			if (Character.isAlphabetic(keyLetter.charAt(0)) || Characters.isCombiningPunctuation(language, keyLetter.charAt(0))) {
+			if (Character.isAlphabetic(keyLetter.charAt(0)) || Characters.isCombiningPunctuation(language, keyLetter.charAt(0)) || TextTools.isCombining(keyLetter)) {
 				generatedWords.add(baseWord + keyLetter);
 			}
 		}

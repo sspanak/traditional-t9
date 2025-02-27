@@ -15,6 +15,7 @@ import io.github.sspanak.tt9.languages.LanguageKind;
 import io.github.sspanak.tt9.preferences.settings.SettingsStore;
 import io.github.sspanak.tt9.util.Logger;
 import io.github.sspanak.tt9.util.TextTools;
+import io.github.sspanak.tt9.util.chars.Characters;
 
 public class SoftKeyNumber2to9 extends SoftKeyNumber {
 	public SoftKeyNumber2to9(Context context) { super(context); }
@@ -88,16 +89,17 @@ public class SoftKeyNumber2to9 extends SoftKeyNumber {
 	 * In some languages there are many characters for a single key. Naturally, they can not all fit
 	 * on one key. As suggested by the community, we could display them as "A-Z".
 	 * @see <a href="https://github.com/sspanak/tt9/issues/628">Issue #628</a>
+	 * Additionally, for combining characters, we want to add a dummy base, to ensure they look properly.
 	 */
 	private String abbreviateCharList(String chars, Locale locale, boolean isUppercase) {
 		String firstLetter = chars.substring(0, 1);
-		String lastLetter = chars.substring(chars.length() - 1);
-		boolean containsCombiningChars = TextTools.isCombining(firstLetter) || TextTools.isCombining(lastLetter);
+		firstLetter = TextTools.isCombining(firstLetter) ? Characters.COMBINING_ZERO_BASE + firstLetter : firstLetter;
 
-		return
-			(isUppercase ? firstLetter.toUpperCase(locale) : firstLetter)
-			+ (containsCombiningChars ? "–  " : "–")
-			+ (isUppercase ? lastLetter.toUpperCase(locale) : lastLetter);
+		String lastLetter = chars.substring(chars.length() - 1);
+		lastLetter = TextTools.isCombining(lastLetter) ? Characters.COMBINING_ZERO_BASE + lastLetter : lastLetter;
+
+		String list = firstLetter + "–" + lastLetter;
+		return isUppercase ? list.toUpperCase(locale) : list;
 	}
 
 

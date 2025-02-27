@@ -13,11 +13,14 @@ import io.github.sspanak.tt9.languages.LanguageKind;
 
 
 class LocaleWordsSorter {
+	private final Language language;
 	private final Pattern sortingPattern;
 
 
 	LocaleWordsSorter(@Nullable Language language) {
-		sortingPattern = LanguageKind.isIndic(language) ? Pattern.compile("\\p{L}\\p{M}+") : null;
+		this.language = language;
+		boolean isAlphabetWithModifiers = LanguageKind.isIndic(language) || LanguageKind.isVietnamese(language);
+		sortingPattern = isAlphabetWithModifiers ? Pattern.compile("\\p{L}\\p{M}+") : null;
 	}
 
 
@@ -49,7 +52,9 @@ class LocaleWordsSorter {
 	}
 
 
-	boolean shouldSort(@Nullable Language language, @NonNull String stem, @NonNull String digitSequence) {
-		return LanguageKind.isIndic(language) && !stem.isEmpty() && stem.length() == digitSequence.length() - 1;
+	boolean shouldSort(@NonNull String stem, @NonNull String digitSequence) {
+		return
+			(LanguageKind.isIndic(language) && !stem.isEmpty() && stem.length() == digitSequence.length() - 1)
+			|| LanguageKind.isVietnamese(language);
 	}
 }

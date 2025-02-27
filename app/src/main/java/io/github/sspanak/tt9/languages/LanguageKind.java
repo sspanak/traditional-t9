@@ -20,4 +20,5 @@ public class LanguageKind {
 	public static boolean isIndic(Language language) { return isGujarati(language) || isHindi(language); }
 	public static boolean isKorean(Language language) { return language != null && language.getId() == KOREAN; }
 	public static boolean isUkrainian(Language language) { return language != null && language.getId() == 54645; }
+	public static boolean isVietnamese(Language language) { return language != null && language.getId() == 481590; }
 }

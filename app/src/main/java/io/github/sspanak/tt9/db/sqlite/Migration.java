@@ -21,6 +21,11 @@ class Migration {
 				" SET maxWordsPerSequence = " + SettingsStore.SUGGESTIONS_POSITIONS_LIMIT +
 				", fileHash = '0'",
 			832
+		),
+		new Migration(
+			// enforce the new Vietnamese layout
+			"DELETE FROM " + Tables.LANGUAGES_META + " WHERE langId = 481590",
+			952
 		)
 	};
 

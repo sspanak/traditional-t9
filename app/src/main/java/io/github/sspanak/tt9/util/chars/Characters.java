@@ -6,6 +6,8 @@ import java.util.Arrays;
 import io.github.sspanak.tt9.languages.Language;
 
 public class Characters extends Emoji {
+	public static final String COMBINING_ZERO_BASE = "◌";
+
 	final public static ArrayList<String> Currency = new ArrayList<>(Arrays.asList(
 		"$", "€", "₿", "¢", "¤", "₱", "¥", "£"
 	));
