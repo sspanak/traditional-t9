@@ -30,7 +30,7 @@ abstract public class PopupDialog {
 	}
 
 	protected void render(Runnable OKAction) {
-		UI.confirm(context, title, message, OKLabel, OKAction, () -> activityFinisher.accept(""));
+		UI.confirm(context, title, message, OKLabel, OKAction, true, () -> activityFinisher.accept(""), null);
 	}
 
 	abstract void render();

@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import androidx.preference.PreferenceManager;
 
 class BaseSettings {
+	protected final String LOG_TAG = SettingsInput.class.getSimpleName();
+
 	protected final Context context;
 	protected final SharedPreferences prefs;
 	protected final SharedPreferences.Editor prefsEditor;

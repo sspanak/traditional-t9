@@ -20,28 +20,25 @@ public class HotkeysScreen extends BaseScreenFragment {
 	@Override
 	public void onCreate() {
 		DropDownPreference[] dropDowns = {
-			findPreference(SectionKeymap.ITEM_ADD_WORD),
-			findPreference(SectionKeymap.ITEM_BACKSPACE),
-			findPreference(SectionKeymap.ITEM_COMMAND_PALETTE),
-			findPreference(SectionKeymap.ITEM_EDIT_TEXT),
-			findPreference(SectionKeymap.ITEM_FILTER_CLEAR),
-			findPreference(SectionKeymap.ITEM_FILTER_SUGGESTIONS),
-			findPreference(SectionKeymap.ITEM_PREVIOUS_SUGGESTION),
-			findPreference(SectionKeymap.ITEM_NEXT_SUGGESTION),
-			findPreference(SectionKeymap.ITEM_NEXT_INPUT_MODE),
-			findPreference(SectionKeymap.ITEM_NEXT_LANGUAGE),
-			findPreference(SectionKeymap.ITEM_SELECT_KEYBOARD),
-			findPreference(SectionKeymap.ITEM_SHIFT),
-			findPreference(SectionKeymap.ITEM_SPACE_KOREAN),
-			findPreference(SectionKeymap.ITEM_SHOW_SETTINGS),
-			findPreference(SectionKeymap.ITEM_VOICE_INPUT),
+//			findPreference(SectionKeymap.ITEM_ADD_WORD),
+//			findPreference(SectionKeymap.ITEM_EDIT_TEXT),
 		};
 		SectionKeymap section = new SectionKeymap(Arrays.asList(dropDowns), activity);
 		section.populate().activate();
 
+		// @todo: delete SectionKeymap
+		// @todo: delete Hotkeys
+		// @todo: prettify the function name when re-assigning
+
+		// @todo: Fix this. Do PreferenceHotkey.setDefault().populate() for each preference
 		(new ItemResetKeys(findPreference(ItemResetKeys.NAME), activity, section))
 			.enableClickHandler();
 
 		resetFontSize(false);
+	}
+
+	@Override
+	public int getPreferenceCount() {
+		return -1; // prevent scrolling and item selection using the number keys on this screen
 	}
 }

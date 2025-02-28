@@ -2,63 +2,63 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
 	app:orderingFromXml="true">
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_add_word"
 		app:title="@string/function_add_word" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_backspace"
 		app:title="@string/function_backspace" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_command_palette"
 		app:title="@string/function_show_command_palette" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_filter_clear"
 		app:title="@string/function_filter_clear" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_edit_text"
 		app:title="@string/function_edit_text" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_filter_suggestions"
 		app:title="@string/function_filter_suggestions" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_previous_suggestion"
 		app:title="@string/function_previous_suggestion" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_next_suggestion"
 		app:title="@string/function_next_suggestion" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_next_language"
 		app:title="@string/function_next_language" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_next_input_mode"
 		app:title="@string/function_next_mode" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_select_keyboard"
 		app:title="@string/function_select_keyboard" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_shift"
 		app:title="@string/virtual_key_shift" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_space_korean"
 		app:title="@string/virtual_key_space_korean" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceHotkey
 		app:key="key_show_settings"
 		app:title="@string/function_show_settings" />
 
-	<DropDownPreference
+	<io.github.sspanak.tt9.preferences.screens.hotkeys.PreferenceVoiceInputHotkey
 		app:key="key_voice_input"
 		app:title="@string/function_voice_input" />
 

@@ -6,6 +6,7 @@ import android.view.KeyEvent;
 import java.util.HashMap;
 
 import io.github.sspanak.tt9.preferences.screens.hotkeys.SectionKeymap;
+import io.github.sspanak.tt9.util.Logger;
 
 class SettingsHotkeys extends SettingsHacks {
 	private static final String HOTKEY_VERSION = "hotkeys_v5";
@@ -27,6 +28,16 @@ class SettingsHotkeys extends SettingsHacks {
 
 	public int getFunctionKey(String functionName) {
 		return getStringifiedInt(functionName, KeyEvent.KEYCODE_UNKNOWN);
+	}
+
+
+	public void setFunctionKey(String functionName, int keyCode) {
+		if (isValidFunction(functionName)) {
+			Logger.d(LOG_TAG, "Setting hotkey for function: '" + functionName + "' to " + keyCode);
+			prefsEditor.putString(functionName, String.valueOf(keyCode)).apply();
+		} else {
+			Logger.w(LOG_TAG,"Not setting a hotkey for invalid function: '" + functionName + "'");
+		}
 	}
 
 
@@ -74,5 +85,30 @@ class SettingsHotkeys extends SettingsHacks {
 	}
 	public int getKeyVoiceInput() {
 		return getFunctionKey(SectionKeymap.ITEM_VOICE_INPUT);
+	}
+
+
+	public String getFunction(int keyCode) {
+		if (keyCode == KeyEvent.KEYCODE_UNKNOWN) {
+			return null;
+		}
+
+		for (String key : SectionKeymap.ITEMS) {
+			if (keyCode == getFunctionKey(key)) {
+				return key;
+			}
+		}
+
+		return null;
+	}
+
+
+	private boolean isValidFunction(String functionName) {
+		for (String validName : SectionKeymap.ITEMS) {
+			if (validName.equals(functionName)) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

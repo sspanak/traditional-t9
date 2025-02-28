@@ -1,8 +1,10 @@
 package io.github.sspanak.tt9.ui;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.inputmethodservice.InputMethodService;
 import android.os.Looper;
@@ -55,23 +57,27 @@ public class UI {
 	}
 
 
-	public static void confirm(Context context, String title, String message, String OKLabel, Runnable onOk, Runnable onCancel) {
+	public static void confirm(@NonNull Context context, String title, String message, String OKLabel, Runnable onOk, boolean cancelLabel, Runnable onCancel, DialogInterface.OnKeyListener onKey) {
+		Dialog dialogue;
+
 		if (DeviceInfo.AT_LEAST_ANDROID_12) {
-			new MaterialAlertDialogBuilder(context)
-				.setTitle(title)
+			 dialogue = new MaterialAlertDialogBuilder(context)
 				.setMessage(message)
 				.setPositiveButton(OKLabel, (dialog, whichButton) -> { if (onOk != null) onOk.run(); })
-				.setNegativeButton(android.R.string.cancel, (dialog, whichButton) -> { if (onCancel != null) onCancel.run(); })
-				.setCancelable(false)
+				.setNegativeButton(cancelLabel ? context.getString(android.R.string.cancel) : null, (dialog, whichButton) -> { if (onCancel != null) onCancel.run(); })
 				.show();
 		} else {
-			new AlertDialog.Builder(context)
-				.setTitle(title)
+			dialogue = new AlertDialog.Builder(context)
 				.setMessage(message)
 				.setPositiveButton(OKLabel, (dialog, whichButton) -> { if (onOk != null) onOk.run(); })
-				.setNegativeButton(android.R.string.cancel, (dialog, whichButton) -> { if (onCancel != null) onCancel.run(); })
-				.setCancelable(false)
+				.setNegativeButton(cancelLabel ? context.getString(android.R.string.cancel) : null, (dialog, whichButton) -> { if (onCancel != null) onCancel.run(); })
 				.show();
+		}
+
+		dialogue.setTitle(title);
+		dialogue.setCancelable(false);
+		if (onKey != null) {
+			dialogue.setOnKeyListener(onKey);
 		}
 	}
 

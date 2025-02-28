@@ -152,6 +152,10 @@
 	<string name="donate_hold_to_open">Press and hold to open in the browser.</string>
 	<string name="donate_url" translatable="false">https://www.buymeacoffee.com/sspanak</string>
 
+	<string name="function_already_assigned">This key has already function \"%1$s\" assigned. Do you want to assign \"%2$s\" to it?</string>
+	<string name="function_assign_instructions">* Press or hold a key to assign a function to it.\n\n* Press 0 to cancel.\n\n* Press 2 to disable this function.</string>
+	<string name="function_reassign">Reassign</string>
+
 	<string name="function_add_word">Add Word</string>
 	<string name="function_add_word_not_available">Adding words is not possible in this language.</string>
 	<string name="function_backspace">Backspace</string>
@@ -195,6 +199,7 @@
 	<string name="setup_spell_checker_on">System spell checker may interfere with adding words. Click here to disable.</string>
 	<string name="setup_spell_checker_off">Disabled</string>
 
+	<string name="key_key">Key</string>
 	<string name="key_hold_key">(hold)</string>
 	<string name="key_none" translatable="false">--</string>
 	<string name="key_back">Back</string>

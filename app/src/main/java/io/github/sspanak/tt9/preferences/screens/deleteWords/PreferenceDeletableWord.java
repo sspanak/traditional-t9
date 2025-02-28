@@ -55,6 +55,8 @@ public class PreferenceDeletableWord extends ScreenPreference {
 			context.getString(R.string.delete_words_deleted_confirm_deletion_question, word),
 			context.getString(R.string.delete_words_delete),
 			this::onDeletionConfirmed,
+			true,
+			null,
 			null
 		);
 	}

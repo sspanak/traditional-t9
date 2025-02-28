@@ -29,6 +29,24 @@ public class SectionKeymap {
 	public static final String ITEM_SHOW_SETTINGS = "key_show_settings";
 	public static final String ITEM_VOICE_INPUT = "key_voice_input";
 
+	public static final String[] ITEMS = {
+		ITEM_ADD_WORD,
+		ITEM_BACKSPACE,
+		ITEM_COMMAND_PALETTE,
+		ITEM_EDIT_TEXT,
+		ITEM_FILTER_CLEAR,
+		ITEM_FILTER_SUGGESTIONS,
+		ITEM_PREVIOUS_SUGGESTION,
+		ITEM_NEXT_SUGGESTION,
+		ITEM_NEXT_INPUT_MODE,
+		ITEM_NEXT_LANGUAGE,
+		ITEM_SELECT_KEYBOARD,
+		ITEM_SHIFT,
+		ITEM_SPACE_KOREAN,
+		ITEM_SHOW_SETTINGS,
+		ITEM_VOICE_INPUT,
+	};
+
 	private final Hotkeys hotkeys;
 	private final Collection<DropDownPreference> items;
 	private final SettingsStore settings;
